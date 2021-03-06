@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manipulasi String</title>
+</head>
+<body>
+    <p id="jumlah-karakter"></p>
+    <p id="index-of"></p>
+    <p id="cari"></p>
+    <p id="potong"></p>
+    <p id="ubah"></p>
+    <p id="huruf-besar"></p>
+    <p id="huruf-kecil"></p>
+    <p id="gabung"></p>
+    <p id="pisah"></p>
+    <p id="ubah"></p>
+
+    <script>
+        var mori = "Mauriza Anak Yang Berbakti Kepada Orang Tua";
+        var kalimat = "belajar JAVASCRIPT di www.malasngoding.com";   
+        var filter = kalimat.slice(22, 42);
+        var ganti = kalimat.replace('JAVASCRIPT', 'pemrograman')
+
+        // huruf besar
+        var besar = kalimat.toUpperCase();
+
+        // huruf kecil 
+        var kecil = kalimat.toLocaleLowerCase();
+
+        var kataSatu = 'cimmy';
+        var kataDua = 'is mori';
+
+        document.getElementById('jumlah-karakter').innerHTML = mori.length;
+        document.getElementById('index-of').innerHTML = mori.indexOf('Anak');
+        document.getElementById('cari').innerHTML = mori.search('Anak');
+        document.getElementById('potong').innerHTML = filter;
+        document.getElementById('ubah').innerHTML = ganti;
+        document.getElementById('huruf-besar').innerHTML = besar;
+        document.getElementById('huruf-kecil').innerHTML = kecil;
+        document.getElementById('gabung').innerHTML = kataSatu.concat(" ", kataDua);
+        document.getElementById('gabung').innerHTML = kataSatu.concat(" ", kataDua);
+
+        var huruf = "a,b,c";    
+  
+        // string jadi array
+        var convert = huruf.split(",");  
+        document.getElementById("ubah").innerHTML = convert[0];
+                
+
+
+    </script>
+</body>
+</html>

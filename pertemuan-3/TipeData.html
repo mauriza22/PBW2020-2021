@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tipe Data</title>
+</head>
+<body>
+    <div id="angka"></div>
+    <div id="string"></div>
+    <div id="array"></div>
+    <div id="objek"></div>
+
+    <script>
+        var barang = ["Alqur'an", "Kartu Setoran"];
+        var manusia = 
+        {
+            nama: "Mauriza Humaira", 
+            umur: 18, 
+            citaCita: "Software Engineer"
+        };
+        
+        document.getElementById('angka').innerHTML = 34; 
+        document.getElementById('string').innerHTML = 'Mori';
+        document.getElementById('array').innerHTML = barang[0];
+        document.getElementById('objek').innerHTML = manusia.nama + " ,berumur " + manusia.umur + ".<br> Dia Bercita-cita menjadi " +manusia.citaCita;
+    </script>
+</body>
+</html>
